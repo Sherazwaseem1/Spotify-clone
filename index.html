@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>MyMusic - Music of the World!</title>
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"> 
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="home">
+          <div class="list">
+            <ul>
+              <li>
+                <div class="logoimg">
+                  <img src="images/logo.svg" alt="Logo" />
+                  <img src="images/close.svg" alt="close pic" id="close" />
+                </div>
+              </li>
+              <li class="home_list" ><img src="images/home.svg" alt="home" /><div id ="Home_box">Home</div></li>
+              <li class="home_list">
+                <img src="images/search.svg" alt="Search" />Search
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="left_content">
+          <div class="library">
+            <div class="libarytext">
+              <img src="images/playlist.svg" alt="Playlist" />
+              <h2>Your library</h2>
+            </div>
+            <div class="plus_icon">
+              <img src="images/plus_icon.svg" alt="View More" />
+            </div>
+          </div>
+          <div class="songslist">
+            <ul id="songsUl"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="main_container">
+          <div class="header">
+            <div class="navbar">
+              <div class="arrows">
+                <img src="images/hamburger.svg" alt="hamburger" id="hamburger" />
+                <img src="images/left_arrow.svg" alt="Left arrow" id = "left_arrow" />
+                <img src="images/right_arrow.svg" alt="Right arrow" id = "right_arrow" />
+              </div>
+              <div class="buttons">
+                <button class="sign">Sign up</button>
+                <button class="login">Log in</button>
+              </div>
+            </div>
+          </div>
+          <div class="cardcontainer">
+            <div class="cardbox">
+              <div class="greenplay">
+                <img src="images/playbutton.svg" alt="play" />
+              </div>
+              <img
+                aria-hidden="false"
+                draggable="false"
+                loading="eager"
+                src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1n6IJz-default.jpg"
+                alt="This Is Atif Aslam"
+                class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj image"
+                sizes="(min-width: 1280px) 232px, 192px"
+              />
+              <h2>Atif Aslam</h2>
+            </div>
+            <div class="cardbox">
+              <div class="greenplay">
+                <img src="images/playbutton.svg" alt="play" />
+              </div>
+              <img
+                aria-hidden="false"
+                draggable="false"
+                loading="lazy"
+                src="https://i.scdn.co/image/ab67616d00001e02bcaf56777eb5a9059277fdcb"
+                alt="English Songs"
+                class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj image"
+                srcset="
+                  https://i.scdn.co/image/ab67616d00001e02bcaf56777eb5a9059277fdcb 150w,
+                  https://i.scdn.co/image/ab67616d00001e02bcaf56777eb5a9059277fdcb 300w,
+                  https://i.scdn.co/image/ab67616d0000b273bcaf56777eb5a9059277fdcb 320w,
+                  https://i.scdn.co/image/ab67616d0000b273bcaf56777eb5a9059277fdcb 640w
+                "
+                sizes="(min-width: 1280px) 232px, 192px"
+              />
+              <h2>English Songs</h2>
+            </div>
+            <div class="cardbox">
+              <div class="greenplay">
+                <img src="images/playbutton.svg" alt="play" />
+              </div>
+              <img
+                aria-hidden="false"
+                draggable="false"
+                loading="eager"
+                src="https://i.scdn.co/image/ab67706f00000002e6e7407c81085e82cd47d959"
+                alt="Desi Hits"
+                class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj image"
+                sizes="(min-width: 1280px) 232px, 192px"
+              />
+              <h2>Desi Hits</h2>
+            </div>
+          </div>
+        </div>
+        <div class="playcontainer">
+          <div class="playbar">
+            <div class="songname">Summer High by AP Dhillon.mp3</div>
+            <div class="controls">
+              <div class="shuffle">
+                <img src="images/shuffle.svg" alt="shuffle" />
+              </div>
+              <div class="set">
+                <div class="previous color">
+                  <img src="images/previous.svg" alt="previousbutton" />
+                </div>
+                <div class="play">
+                  <img src="images/Mainplay.svg" alt="playbutton" class="playbutton" />
+                </div>
+                <div class="next color">
+                  <img src="images/next.svg" alt="Nextbutton" />
+                </div>
+              </div>
+              <div class="timecounter">00:00/00:00</div>
+            </div>
+            <div class="volumerange">
+              <img src="images/volume.svg" alt="volume" class="volumeimg" />
+              <input type="range" name="Volume" id="Volume" />
+            </div>
+          </div>
+          <div class="playtime">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
